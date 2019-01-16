@@ -16,7 +16,7 @@ class EmployeeTest{
 			e1[i].address=in.nextLine();
 		}
 		for(i=0;i<numberofemployees;i++){
-			Display();
+			e1(i).Display();
 		}
 	}
 }

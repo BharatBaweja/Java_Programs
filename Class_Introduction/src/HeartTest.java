@@ -1,0 +1,55 @@
+import java.util.*;
+class HeartTest{
+	public static void main(String args[]){
+		Scanner in = new Scanner(System.in);
+		int d;
+		int m;
+		int y;
+		String fName;
+		String lName;
+		System.out.println("Please enter Person's first name :");
+		fName=in.nextLine();
+		System.out.println("Please enter Person's last name :");
+		lName=in.nextLine();
+		System.out.println("Enter date of birth :");
+		System.out.println("Enter day :");
+		d=in.nextInt();
+		System.out.println("Enter month :");
+		m=in.nextInt();
+		System.out.println("Enter year :");
+		y=in.nextInt();
+		Heartrates h1 = new Heartrates(fName,lName,d,m,y);
+		System.out.println(fName+" "+lName);
+		System.out.println(" age in years is :" +h1.AgeCalculator());
+		System.out.println();
+		h1.MaxHeartrateCalculator();
+		System.out.println();
+		h1.TargetheartrateCalculator();
+		Heartrates h2 = new Heartrates(fName,lName,d,m,y);
+		System.out.println("Please enter Person's first name :");
+		fName=in.nextLine();
+		h2.setfName(fName);
+		System.out.println();
+		System.out.println("Please enter Person's last name :");
+		lName=in.nextLine();
+		h2.setlName(lName);
+		DateofBirth date2=new DateofBirth(d,y,m);
+		System.out.println("Enter date of birth :");
+		System.out.println("Enter day :");
+		d=in.nextInt();
+		date2.setday(d);
+		System.out.println("Enter month :");
+		m=in.nextInt();
+		date2.setmonth(m);
+		System.out.println("Enter year :");
+		y=in.nextInt();
+		date2.setyear(y);
+		System.out.println();
+		System.out.println(fName+" "+lName);
+		System.out.println("age in years is :"+h2.AgeCalculator());
+		System.out.println();
+		h2.MaxHeartrateCalculator();
+		System.out.println();
+		h2.TargetheartrateCalculator();
+	}
+}

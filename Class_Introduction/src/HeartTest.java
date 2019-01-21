@@ -33,7 +33,7 @@ class HeartTest{
 		System.out.println("Please enter Person's last name :");
 		lName=in.nextLine();
 		h2.setlName(lName);
-		DateofBirth date2=new DateofBirth(d,y,m);
+		DateofBirth date2=new DateofBirth(1,5,2000);
 		System.out.println("Enter date of birth :");
 		System.out.println("Enter day :");
 		d=in.nextInt();

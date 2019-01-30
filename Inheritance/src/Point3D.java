@@ -23,7 +23,7 @@ class Point3D extends Point2D{
 	}	
 	public float getXYZ(){
 		float arr[] = new float[3];
-		return arr;
+		return arr[];
 	}
 	public String toString(){
 		return (x+","+y+","+z);
